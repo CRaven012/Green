@@ -1,0 +1,426 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: za.ac.sun.cs.green.EntireSuite</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['za.ac.sun.cs.green.EntireSuite'] = new Array();
+    
+        cur['ant.core.lib'] = '/usr/share/ant/lib/ant.jar';
+    
+        cur['ant.file'] = '/home/cameron/Documents/Software_Testing/green/build.xml';
+    
+        cur['ant.file.green'] = '/home/cameron/Documents/Software_Testing/green/build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.green'] = 'file';
+    
+        cur['ant.home'] = '/usr/share/ant';
+    
+        cur['ant.java.version'] = '1.8';
+    
+        cur['ant.library.dir'] = '/usr/share/ant/lib';
+    
+        cur['ant.project.default-target'] = 'build';
+    
+        cur['ant.project.invoked-targets'] = 'test';
+    
+        cur['ant.project.name'] = 'green';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.9.6 compiled on July 8 2015';
+    
+        cur['awt.toolkit'] = 'sun.awt.X11.XToolkit';
+    
+        cur['barvinokpath'] = '/home/cameron/Documents/Software_Testing/green/pathToBarvinok';
+    
+        cur['basedir'] = '/home/cameron/Documents/Software_Testing/green';
+    
+        cur['bootpath'] = '/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar';
+    
+        cur['debuglevel'] = 'source,lines,vars';
+    
+        cur['env._'] = '/usr/bin/ant';
+    
+        cur['env.CLUTTER_IM_MODULE'] = 'xim';
+    
+        cur['env.COMPIZ_CONFIG_PROFILE'] = 'ubuntu';
+    
+        cur['env.DBUS_SESSION_BUS_ADDRESS'] = 'unix:abstract=/tmp/dbus-U7o9VQJ1ss';
+    
+        cur['env.DEFAULTS_PATH'] = '/usr/share/gconf/ubuntu.default.path';
+    
+        cur['env.DESKTOP_SESSION'] = 'ubuntu';
+    
+        cur['env.DISPLAY'] = ':0';
+    
+        cur['env.GDM_LANG'] = 'en_US';
+    
+        cur['env.GDMSESSION'] = 'ubuntu';
+    
+        cur['env.GNOME_DESKTOP_SESSION_ID'] = 'this-is-deprecated';
+    
+        cur['env.GNOME_KEYRING_CONTROL'] = '';
+    
+        cur['env.GNOME_KEYRING_PID'] = '';
+    
+        cur['env.GPG_AGENT_INFO'] = '/home/cameron/.gnupg/S.gpg-agent:0:1';
+    
+        cur['env.GRADLE_HOME'] = '/home/cameron/.sdkman/candidates/gradle/current';
+    
+        cur['env.GTK_IM_MODULE'] = 'ibus';
+    
+        cur['env.GTK_MODULES'] = 'gail:atk-bridge:unity-gtk-module';
+    
+        cur['env.GTK2_MODULES'] = 'overlay-scrollbar';
+    
+        cur['env.HOME'] = '/home/cameron';
+    
+        cur['env.IM_CONFIG_PHASE'] = '1';
+    
+        cur['env.INSTANCE'] = '';
+    
+        cur['env.JOB'] = 'dbus';
+    
+        cur['env.LANG'] = 'en_ZA.UTF-8';
+    
+        cur['env.LANGUAGE'] = 'en_ZA:en';
+    
+        cur['env.LESSCLOSE'] = '/usr/bin/lesspipe %s %s';
+    
+        cur['env.LESSOPEN'] = '| /usr/bin/lesspipe %s';
+    
+        cur['env.LOGNAME'] = 'cameron';
+    
+        cur['env.LS_COLORS'] = 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:';
+    
+        cur['env.MANDATORY_PATH'] = '/usr/share/gconf/ubuntu.mandatory.path';
+    
+        cur['env.PATH'] = '/home/cameron/.sdkman/candidates/gradle/current/bin:/home/cameron/bin:/home/cameron/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin';
+    
+        cur['env.PWD'] = '/home/cameron/Documents/Software_Testing/green';
+    
+        cur['env.QT_ACCESSIBILITY'] = '1';
+    
+        cur['env.QT_IM_MODULE'] = 'ibus';
+    
+        cur['env.QT_LINUX_ACCESSIBILITY_ALWAYS_ON'] = '1';
+    
+        cur['env.QT_QPA_PLATFORMTHEME'] = 'appmenu-qt5';
+    
+        cur['env.QT4_IM_MODULE'] = 'xim';
+    
+        cur['env.SDKMAN_CANDIDATES_DIR'] = '/home/cameron/.sdkman/candidates';
+    
+        cur['env.SDKMAN_CURRENT_API'] = 'https://api.sdkman.io/2';
+    
+        cur['env.SDKMAN_DIR'] = '/home/cameron/.sdkman';
+    
+        cur['env.SDKMAN_LEGACY_API'] = 'https://api.sdkman.io/1';
+    
+        cur['env.SDKMAN_PLATFORM'] = 'Linux64';
+    
+        cur['env.SDKMAN_VERSION'] = '5.6.1+290';
+    
+        cur['env.SESSION'] = 'ubuntu';
+    
+        cur['env.SESSION_MANAGER'] = 'local/cameron-Lenovo-Y50-70:@/tmp/.ICE-unix/1592,unix/cameron-Lenovo-Y50-70:/tmp/.ICE-unix/1592';
+    
+        cur['env.SESSIONTYPE'] = 'gnome-session';
+    
+        cur['env.SHELL'] = '/bin/bash';
+    
+        cur['env.SHLVL'] = '1';
+    
+        cur['env.SSH_AUTH_SOCK'] = '/run/user/1000/keyring/ssh';
+    
+        cur['env.TERM'] = 'xterm-256color';
+    
+        cur['env.UPSTART_SESSION'] = 'unix:abstract=/com/ubuntu/upstart-session/1000/1346';
+    
+        cur['env.USER'] = 'cameron';
+    
+        cur['env.VTE_VERSION'] = '4205';
+    
+        cur['env.WINDOWID'] = '69206317';
+    
+        cur['env.XAUTHORITY'] = '/home/cameron/.Xauthority';
+    
+        cur['env.XDG_CONFIG_DIRS'] = '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg';
+    
+        cur['env.XDG_CURRENT_DESKTOP'] = 'Unity';
+    
+        cur['env.XDG_DATA_DIRS'] = '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop';
+    
+        cur['env.XDG_GREETER_DATA_DIR'] = '/var/lib/lightdm-data/cameron';
+    
+        cur['env.XDG_MENU_PREFIX'] = 'gnome-';
+    
+        cur['env.XDG_RUNTIME_DIR'] = '/run/user/1000';
+    
+        cur['env.XDG_SEAT'] = 'seat0';
+    
+        cur['env.XDG_SEAT_PATH'] = '/org/freedesktop/DisplayManager/Seat0';
+    
+        cur['env.XDG_SESSION_DESKTOP'] = 'ubuntu';
+    
+        cur['env.XDG_SESSION_ID'] = 'c1';
+    
+        cur['env.XDG_SESSION_PATH'] = '/org/freedesktop/DisplayManager/Session0';
+    
+        cur['env.XDG_SESSION_TYPE'] = 'x11';
+    
+        cur['env.XDG_VTNR'] = '7';
+    
+        cur['env.XMODIFIERS'] = '@im=ibus';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['green.srcpath'] = '/home/cameron/Documents/Software_Testing/green/src:/home/cameron/Documents/Software_Testing/green/test';
+    
+        cur['jar.file'] = 'green.jar';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.X11GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.print.PSPrinterJob';
+    
+        cur['java.class.path'] = '/home/cameron/Documents/Software_Testing/green/bin:/home/cameron/Documents/Software_Testing/green/lib/apfloat.jar:/home/cameron/Documents/Software_Testing/green/lib/commons-exec-1.2.jar:/home/cameron/Documents/Software_Testing/green/lib/junit_4.8.2.jar:/home/cameron/Documents/Software_Testing/green/lib/org.hamcrest.core_1.1.0.jar:/home/cameron/Documents/Software_Testing/green/lib/choco-solver-3.3.1.jar:/home/cameron/Documents/Software_Testing/green/lib/slf4j-api-1.7.12.jar:/home/cameron/Documents/Software_Testing/green/lib/slf4j-simple-1.7.12.jar:/home/cameron/Documents/Software_Testing/green/lib/trove-3.1a1.jar:/home/cameron/Documents/Software_Testing/green/lib/choco-solver-2.1.3.jar:/home/cameron/Documents/Software_Testing/green/lib/libcvc3.jar:/home/cameron/Documents/Software_Testing/green/lib/com.microsoft.z3.jar:/home/cameron/Documents/Software_Testing/green/lib/jedis-2.0.0.jar:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.6.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar';
+    
+        cur['java.class.version'] = '52.0';
+    
+        cur['java.endorsed.dirs'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext';
+    
+        cur['java.home'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre';
+    
+        cur['java.io.tmpdir'] = '/tmp';
+    
+        cur['java.library.path'] = '/home/cameron/Documents/Software_Testing/green/lib:${cvc3lib}';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.8';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.8.0_151';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.8';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '25.151-b12';
+    
+        cur['junit.dir'] = 'bin/junit';
+    
+        cur['line.separator'] = '\n';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Linux';
+    
+        cur['os.version'] = '4.13.0-36-generic';
+    
+        cur['output.dir'] = 'bin';
+    
+        cur['path.separator'] = ':';
+    
+        cur['source'] = '1.8';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.desktop'] = 'gnome';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner za.ac.sun.cs.green.EntireSuite skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/cameron/Documents/Software_Testing/green/bin/junit/TEST-za.ac.sun.cs.green.EntireSuite.xml crashfile=/home/cameron/Documents/Software_Testing/green/junitvmwatcher6782438489136512009.properties propsfile=/home/cameron/Documents/Software_Testing/green/junit3053688136881776255.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['target'] = '1.8';
+    
+        cur['user.country'] = 'ZA';
+    
+        cur['user.dir'] = '/home/cameron/Documents/Software_Testing/green';
+    
+        cur['user.home'] = '/home/cameron';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'cameron';
+    
+        cur['user.timezone'] = '';
+    
+        cur['z3lib'] = '/home/cameron/Documents/Software_Testing/green/lib';
+    
+        cur['z3path'] = '/home/cameron/Documents/Software_Testing/green/lib/z3';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class za.ac.sun.cs.green.EntireSuite</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="0_EntireSuite.html">EntireSuite</a></td><td><a title="Display all tests" href="0_EntireSuite.html">76</a></td><td><a title="Display only errors" href="0_EntireSuite-errors.html">9</a></td><td>0</td><td><a title="Display only skipped tests" href="0_EntireSuite-skipped.html">2</a></td><td>0.589</td><td>2018-03-20T14:47:56</td><td>cameron-Lenovo-Y50-70</td>
+</tr>
+</table>
+<h2>Errors</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test01"></a>test01</td><td>Error</td><td>N/A<br>
+<br>
+<code>java.lang.RuntimeException<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.invokeBarvinok(CountBarvinokService.java:694)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.processInput(CounttBarvinokService.java:639)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.count(CountBarvinokService.java:521)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService.solve(CountBarvinokService.java:119)<br>	at za.ac.sun.cs.green.service.CountService.solve1(CountService.java:70)<br>	at za.ac.sun.cs.green.service.CountService.solve0(CountService.java:58)<br>	at za.ac.sun.cs.green.service.CountService.processRequeest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:43)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute((SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47))<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253))<br>	at za.ac.sun.cs.green.Instance.request(Instance.java:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.check(BarvinokTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.check(BarvinokTests.java:69)<br>
+<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.test01(BarvinokTests.java:99)<br>
+</code></td><td>0.069</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test02"></a>test02</td><td>Error</td><td>N/A<br>
+<br>
+<code>java.lang.RuntimeException<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.invokeBarvinok(CountBarvinokSerrvice.java:694)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.processInput(CountBarvinokService.java:639)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.count(CountBarvinokService.java:5521)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService.solve(CouuntBarvinokService.java:119)<br>	at za.ac.sun.cs.green.service.CountService.solve1(CountService.java:70)<br>
+<br>	at za.ac.sun.cs.green.service.CountServvice.solve0(CountService.java:58)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:43))<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManageer.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(IInstance.java:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.check(BarvinookTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.check(BarvinokTests.java:69)<br>		at za.ac.sun.cs.green.service.barvinok.BarvinokTests.test02(BarvinokTests.java:127)<br>
+</code></td><td>0.002</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test03"></a>test03</td><td>Error</td><td>N/A<br>
+<br>
+<code>java.lang.RuntimeException<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.invokeBarvinok(CountBarvinokSerrvice.java:694)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.processInput(CountBarvinokService.java:639)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService$HMatrix.count(CountBarvinokService.java:5521)<br>	at za.ac.sun.cs.green.service.barvinok.CountBarvinokService.solve(CouuntBarvinokService.java:119)<br>	at za.ac.sun.cs.green.service.CountService.solve1(CountService.java:70)<br>
+<br>	at za.ac.sun.cs.green.service.CountServvice.solve0(CountService.java:58)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:43))<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManageer.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(IInstance.java:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.check(BarvinookTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokTests.check(BarvinokTests.java:69)<br>		at za.ac.sun.cs.green.service.barvinok.BarvinokTests.test03(BarvinokTests.java:168)<br>
+</code></td><td>0.003</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test01"></a>test01</td><td>Error</td><td>java.net.ConnectException: Connection refused (Connection refused)<br>
+<br>
+<code>redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connectionn refused (Connection refused)<br>	att redis.clients.jedis.Connection.connect(Connection.java:124)<br>	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:77)<br>
+<br>	at reddis.clients.jedis.Connection.sendCommand(Connection.java:73)<br>	at redis.clients.jedis.Jedis.get(Jedis.java:64)<br>	at za.ac.sun.cs.green.store.redis.RedisStore.gett(RedisStore.java:82)<br>	at za.ac.sun.cs.green.store.BasicStore.getApfloatInteger(BasicStore.java:89)<br>	at za.ac.sun.cs.green.service.CountService.solve0(CountService.java:55)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:43)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at  za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0((SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(Instance.jaava:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:69)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.test01(BarvinokRedisTests.java:99)<br>Caused by: java.net.ConnectException: Connection refused (Connectionn refused)<br>	at java.net.PlainSocketImpl.ssocketConnect(Native Method)<br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstracctPlainSocketImpl.java:206)<br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br>	at java.net.Socket.connect(Socket.java:589)<br>	at redis.clients.jedis.Connection.connect(Connection.java:119)<br>
+</code></td><td>0.006</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test02"></a>test02</td><td>Error</td><td>java.net.ConnectException: Connection refused (Connection refused)<br>
+<br>
+<code>redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)<br>	at redis.clients.jedis.Connection.connect(Connection.java:124)<br>	at reedis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:77)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:73)<br>	at redis.clients.jedis.Jedis.get(Jedis.java:64)<br>	at za.ac.sun.cs.green.store.redis.RedisStore.get(RedisStore.java:82)<br>	at za.ac.sun.css.green.store.BasicStore.getApfloatInteger(BasicStore.java:89)<br>	at zza.ac.sun.cs.green.service.CountService.solve0(CountService.java:55)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskMannager.execute0(SerialTaskManager.java:43)<br>	att za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(Instance.javva:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:69)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.test02(BarvinokRedisTests.jjava:116)<br>Caused by: java.net.ConnectException: Connection refused (Connectionn refused)<br>	at java.net.PlainSocketImpl.ssocketConnect(Native Method)<br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstracctPlainSocketImpl.java:206)<br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br>	at java.net.Socket.connect(Socket.java:589)<br>	at redis.clients.jedis.Connection.connect(Connection.java:119)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test03"></a>test03</td><td>Error</td><td>java.net.ConnectException: Connection refused (Connection refused)<br>
+<br>
+<code>redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)<br>	at redis.clients.jedis.Connection.connect(Connection.java:124)<br>	at reedis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:77)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:73)<br>	at redis.clients.jedis.Jedis.get(Jedis.java:64)<br>	at za.ac.sun.cs.green.store.redis.RedisStore.get(RedisStore.java:82)<br>	at za.ac.sun.css.green.store.BasicStore.getApfloatInteger(BasicStore.java:89)<br>	at zza.ac.sun.cs.green.service.CountService.solve0(CountService.java:55)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskMannager.execute0(SerialTaskManager.java:43)<br>	att za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(Instance.javva:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:69)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.test03(BarvinokRedisTests.jjava:143)<br>Caused by: java.net.ConnectException: Connection refused (Connectionn refused)<br>	at java.net.PlainSocketImpl.ssocketConnect(Native Method)<br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstracctPlainSocketImpl.java:206)<br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br>	at java.net.Socket.connect(Socket.java:589)<br>	at redis.clients.jedis.Connection.connect(Connection.java:119)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test04"></a>test04</td><td>Error</td><td>java.net.ConnectException: Connection refused (Connection refused)<br>
+<br>
+<code>redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)<br>	at redis.clients.jedis.Connection.connect(Connection.java:124)<br>	at reedis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:77)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:73)<br>	at redis.clients.jedis.Jedis.get(Jedis.java:64)<br>	at za.ac.sun.cs.green.store.redis.RedisStore.get(RedisStore.java:82)<br>	at za.ac.sun.css.green.store.BasicStore.getApfloatInteger(BasicStore.java:89)<br>	at zza.ac.sun.cs.green.service.CountService.solve0(CountService.java:55)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskMannager.execute0(SerialTaskManager.java:43)<br>	att za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(Instance.javva:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:69)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.test04(BarvinokRedisTests.jjava:159)<br>Caused by: java.net.ConnectException: Connection refused (Connectionn refused)<br>	at java.net.PlainSocketImpl.ssocketConnect(Native Method)<br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstracctPlainSocketImpl.java:206)<br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br>	at java.net.Socket.connect(Socket.java:589)<br>	at redis.clients.jedis.Connection.connect(Connection.java:119)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test05"></a>test05</td><td>Error</td><td>java.net.ConnectException: Connection refused (Connection refused)<br>
+<br>
+<code>redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)<br>	at redis.clients.jedis.Connection.connect(Connection.java:124)<br>	at reedis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:77)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:73)<br>	at redis.clients.jedis.Jedis.get(Jedis.java:64)<br>	at za.ac.sun.cs.green.store.redis.RedisStore.get(RedisStore.java:82)<br>	at za.ac.sun.css.green.store.BasicStore.getApfloatInteger(BasicStore.java:89)<br>	at zza.ac.sun.cs.green.service.CountService.solve0(CountService.java:55)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskMannager.execute0(SerialTaskManager.java:43)<br>	att za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(Instance.javva:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:69)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.test05(BarvinokRedisTests.jjava:200)<br>Caused by: java.net.ConnectException: Connection refused (Connectionn refused)<br>	at java.net.PlainSocketImpl.ssocketConnect(Native Method)<br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstracctPlainSocketImpl.java:206)<br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br>	at java.net.Socket.connect(Socket.java:589)<br>	at redis.clients.jedis.Connection.connect(Connection.java:119)<br>
+</code></td><td>0.001</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test06"></a>test06</td><td>Error</td><td>java.net.ConnectException: Connection refused (Connection refused)<br>
+<br>
+<code>redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused (Connection refused)<br>	at redis.clients.jedis.Connection.connect(Connection.java:124)<br>	at reedis.clients.jedis.BinaryClient.connect(BinaryClient.java:54)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:77)<br>	at redis.clients.jedis.Connection.sendCommand(Connection.java:73)<br>	at redis.clients.jedis.Jedis.get(Jedis.java:64)<br>	at za.ac.sun.cs.green.store.redis.RedisStore.get(RedisStore.java:82)<br>	at za.ac.sun.css.green.store.BasicStore.getApfloatInteger(BasicStore.java:89)<br>	at zza.ac.sun.cs.green.service.CountService.solve0(CountService.java:55)<br>	at za.ac.sun.cs.green.service.CountService.processRequest(CountService.java:44)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskMannager.execute0(SerialTaskManager.java:43)<br>	att za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTasskManager.execute(SerialTaskManager.java:29)<br>
+<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute0(SerialTaskManager.java:47)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.execute(SerialTaskManager.java:29)<br>	at za.ac.sun.cs.green.taskmanager.SerialTaskManager.process(SerialTaskManager.java:65)<br>	at za.ac.sun.cs.green.Green.handleRequest(Green.java:253)<br>	at za.ac.sun.cs.green.Instance.request(Instance.javva:64)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:59)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.check(BarvinokRedisTests.java:69)<br>	at za.ac.sun.cs.green.service.barvinok.BarvinokRedisTests.test06(BarvinokRedisTests.jjava:228)<br>Caused by: java.net.ConnectException: Connection refused (Connectionn refused)<br>	at java.net.PlainSocketImpl.ssocketConnect(Native Method)<br>	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)<br>	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstracctPlainSocketImpl.java:206)<br>	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)<br>	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)<br>	at java.net.Socket.connect(Socket.java:589)<br>	at redis.clients.jedis.Connection.connect(Connection.java:119)<br>
+</code></td><td>0.001</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('za.ac.sun.cs.green.EntireSuite');">
+                    Properties &raquo;
+                </a>
+</div>
+<div class="Properties">
+<a href="./0_EntireSuite-out.html">
+                        System.out &raquo;
+                    </a>
+</div>
+</body>
+</html>

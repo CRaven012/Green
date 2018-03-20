@@ -1,0 +1,2 @@
+<path-to-barvinok>/latte2polylib.pl $1 > $1a
+<path-to-barvinok>/barvinok_count < $1a
